@@ -4,6 +4,7 @@
     "https://raw.githubusercontent.com/ruyut/TaiwanCalendar/main/data/{year}.json"
   ],
   "holidayExclusions": [
-    { "date": "09-03", "note": "軍人節，只有軍人放假，不是普遍放假日" }
+    { "date": "09-03", "note": "軍人節，只有軍人放假，不是普遍放假日" },
+    { "date": "09-28", "note": "暫時：驗證 App 真的讀到遠端設定檔，測完移除" }
   ]
 }
