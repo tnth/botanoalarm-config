@@ -1,0 +1,9 @@
+{
+  "holidaySources": [
+    "https://cdn.jsdelivr.net/gh/ruyut/TaiwanCalendar/data/{year}.json",
+    "https://raw.githubusercontent.com/ruyut/TaiwanCalendar/main/data/{year}.json"
+  ],
+  "holidayExclusions": [
+    { "date": "09-03", "note": "軍人節，只有軍人放假，不是普遍放假日" }
+  ]
+}
