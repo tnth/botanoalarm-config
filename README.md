@@ -1,21 +1,27 @@
 # botanoalarm-config
 
-**Botano / 我的鬧鐘** 這支 App 對外公開的東西都放這裡。兩個檔案：
+**Botano / 我的鬧鐘** 這支 App 對外公開的東西都放這裡。三個檔案：
 
 | 檔案 | 是什麼 | 什麼時候要動它 |
 |---|---|---|
 | **[`holiday_config.json`](holiday_config.json)** | App 去哪裡抓台灣的放假資料 | 假日標記出問題時（見下） |
-| **[`privacy.html`](privacy.html)** | 隱私權政策的網頁版 | App 的資料行為改變時 |
+| **[`privacy.html`](privacy.html)** | 隱私權政策網頁版（繁中） | App 的資料行為改變時 |
+| **[`privacy-en.html`](privacy-en.html)** | 隱私權政策網頁版（英文） | 同上，**兩份要一起改** |
 
 > ⚠️ **這個 repo 必須永遠公開、而且不能改名或刪除。**
-> `holiday_config.json` 的網址寫在 App 裡，`privacy.html` 的網址填在
-> Play Console。兩個都是外面指進來的，動了就是斷掉。
+> `holiday_config.json` 的網址寫在 App 裡，兩份 `privacy` 的網址填在
+> Play Console。全都是外面指進來的，動了就是斷掉。
 
 ---
 
-## privacy.html：改它之前先看這裡
+## 隱私權政策：改它之前先看這裡
 
-**這份是副本，正本在 App 的原始碼裡**（`doc/privacy_policy.md`）。
+**這兩份都是副本，正本在 App 的原始碼裡**（`doc/privacy_policy.md` 與
+`doc/privacy_policy_en.md`）。
+
+**中英文不是互相翻譯，是兩份各自成立的文件。** 例如政府假日那一節：中文版直接
+介紹功能，英文版寫的是「這是台灣專屬的功能、在海外預設關閉」——因為對海外
+使用者來說那件事根本不會發生。改動時要各自看語意，不要對照著翻。
 
 原始碼那個 repo 是私有的，開不了 GitHub Pages，所以隱私權政策才需要在這裡放一份。
 
@@ -24,16 +30,20 @@
 正本改完之後，用專案裡的轉檔腳本重新產生這一頁，**不要手改 HTML**（手改的話，下次跑腳本就會被蓋掉）。在 App 的專案目錄下執行：
 
 ```
-python tool/privacy_to_html.py ../botanoalarm-config/privacy.html
+python tool/privacy_to_html.py doc/privacy_policy.md    ../botanoalarm-config/privacy.html
+python tool/privacy_to_html.py doc/privacy_policy_en.md ../botanoalarm-config/privacy-en.html
 ```
 
-最後那個路徑換成你這個 repo 的實際位置。
+最後那個路徑換成你這個 repo 的實際位置。**兩行都要跑。**
 
 已知還有一次改動是排定要做的：**內購上線後**，要回頭確認第四節寫的 RevenueCat 行為與實際串接一致。
 
-網址（填在 Play Console 的就是這個）：
+網址。**Play Console 的隱私權政策網址是每個商店語言各自填一個**，別填錯：
 
-**<https://tnth.github.io/botanoalarm-config/privacy.html>**
+| 商店語言 | 要填的網址 |
+|---|---|
+| 繁體中文 | <https://tnth.github.io/botanoalarm-config/privacy.html> |
+| 英文 | <https://tnth.github.io/botanoalarm-config/privacy-en.html> |
 
 ---
 

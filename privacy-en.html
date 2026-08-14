@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — My Alarm</title>
+<style>
+  :root {
+    --bg: #f5f7f4;
+    --surface: #ffffff;
+    --text: #1c211b;
+    --muted: #5b6459;
+    --accent: #2f5e33;
+    --border: #dfe4dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121511;
+      --surface: #1a1e19;
+      --text: #e4e8e1;
+      --muted: #9aa396;
+      --accent: #9ccc9f;
+      --border: #2c322a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    line-height: 1.85;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.4;
+    margin: 0 0 .35rem;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 2.75rem 0 .6rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+  }
+  h3 { font-size: 1.02rem; margin: 1.75rem 0 .4rem; color: var(--muted); }
+  p, li { margin: .7rem 0; overflow-wrap: break-word; }
+  ul { padding-left: 1.3rem; }
+  a { color: var(--accent); }
+  strong { font-weight: 700; }
+  .meta { color: var(--muted); font-size: .9rem; line-height: 1.7; }
+  .meta p { margin: .1rem 0; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 22rem; }
+  th, td {
+    border: 1px solid var(--border);
+    padding: .55rem .7rem;
+    text-align: left;
+    vertical-align: top;
+    font-size: .95rem;
+  }
+  th { background: var(--surface); font-weight: 700; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy — My Alarm</h1>
+<div class="meta"><p>Last updated: 14 August 2026</p><p>Effective date: [launch date]</p></div>
+<p>Thank you for using My Alarm. This document explains what data the app touches, why it needs it, and what we <strong>cannot see at all</strong>.</p>
+<h2>In one sentence</h2>
+<p><strong>Everything you create in this app — alarms, schedule marks, notes — stays on your own phone. It is never uploaded to any server, and the developer cannot see it.</strong></p>
+<p>Only two outside services ever touch information from your device: Google&#x27;s advertising service (section 3) and payment processing when you buy membership (section 4). Neither of them receives your alarms or your schedule.</p>
+<p>One feature in this app is specific to Taiwan — automatic public holiday marking — and it is <strong>switched off by default outside Taiwan</strong>. See section 2.</p>
+<h2>1. What you create</h2>
+<p>This includes:</p>
+<ul>
+<li>Alarm settings (time, repeat rules, sound, vibration)</li>
+<li>Working / day-off / shift marks on the calendar</li>
+<li>Notes you write yourself</li>
+<li>App preferences</li>
+</ul>
+<p><strong>All of this is stored locally on your device.</strong> There is no registration, no sign-in and no cloud sync, and the developer has no way to read any of it.</p>
+<p>(If you buy membership, <strong>only the fact that you bought it</strong> is stored with an outside service, so that it can be restored when you change phones. Your alarms, schedule and notes are not there — see section 4.)</p>
+<p><strong>Uninstalling the app deletes all of it.</strong> We hold no backup and cannot recover anything for you. That is the price of not uploading — and also the point of it.</p>
+<h3>About backup files</h3>
+<p>The app can export and import a backup. The file contains the data listed above, and <strong>you decide where it goes and who sees it</strong>:</p>
+<ul>
+<li>Save it to your device, and the file sits in your own storage</li>
+<li>Send it somewhere through the share sheet (cloud storage, a messaging app), and that data enters the control of <strong>that service</strong>, under <strong>its</strong> privacy policy</li>
+</ul>
+<p>Either way, the developer never handles the file and never receives it.</p>
+<h2>2. Network connections</h2>
+<p>The app connects to the network in only three situations, and one of them will probably never apply to you:</p>
+<p><strong>(a) Loading ads</strong></p>
+<p>See the next section. This stops once you buy membership.</p>
+<p><strong>(b) Checking whether you have bought membership</strong></p>
+<p>A request to RevenueCat, described in section 4. It sends a random identifier, not anything about you personally.</p>
+<p><strong>(c) Taiwan&#x27;s public holiday calendar — only if you turn it on</strong></p>
+<p>This feature marks Taiwan&#x27;s national holidays and make-up workdays automatically. It is <strong>specific to Taiwan and switched off by default outside Taiwan</strong>, because holiday data for other countries is not available in this app.</p>
+<p>While it is off, <strong>no request of this kind is ever made</strong>. If you do turn it on, the app fetches a public static file, and <strong>nothing about you is sent</strong> — not your alarms, not your marks, not a device identifier, not your location. The setting stays visible everywhere, so you can turn it on if you happen to work to Taiwan&#x27;s calendar.</p>
+<h2>3. Third-party service: Google AdMob (advertising)</h2>
+<p>Users who have not bought membership see ads, served by <strong>Google AdMob</strong>.</p>
+<p>To deliver ads, Google accesses information on your device, which may include:</p>
+<ul>
+<li>Advertising ID</li>
+<li>Basic device and app information (model, OS version, language, approximate region)</li>
+<li>Ad impressions and clicks</li>
+</ul>
+<p><strong>This data is collected and used by Google and is not passed to the developer.</strong> The developer sees only aggregated revenue statistics, which cannot be traced to any individual user.</p>
+<p>For how Google uses this data, see:</p>
+<ul>
+<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a></li>
+</ul>
+<p><strong>You can limit ad tracking</strong>: Android&#x27;s Settings → Google → Ads lets you delete your advertising ID and turn off ad personalisation. You will still see ads afterwards, just less relevant ones.</p>
+<p><strong>Buying membership removes ads entirely</strong>, and the ad SDK is then no longer loaded.</p>
+<h2>4. Payment data when you buy membership</h2>
+<p>Purchases are completed entirely on <strong>Google Play</strong>&#x27;s own screens.</p>
+<p><strong>You never enter card details inside this app, and the developer never sees your card number, billing address or any payment details.</strong> Google handles that data under its own privacy policy.</p>
+<h3>RevenueCat</h3>
+<p>To remember that you have purchased, the app uses <strong>RevenueCat</strong> to verify and store your purchase status. It receives:</p>
+<ul>
+<li><strong>A random identifier generated by the app</strong> to represent &quot;the user of this device&quot;. It is not linked to your name, email address or Google account</li>
+<li><strong>Purchase records</strong>: which item, when it was bought, whether it is currently active, whether it was refunded</li>
+<li>Basic device and platform information (operating system, app version, country/region)</li>
+</ul>
+<p><strong>It does not receive your alarms, your schedule or your notes, and it does not receive your payment method.</strong></p>
+<p>This service exists so that your purchase can be <strong>restored after you change phones or reinstall the app</strong>. If the record lived only on your phone, it would be deleted along with the app.</p>
+<p>Related policies:</p>
+<ul>
+<li><a href="https://play.google.com/intl/en/about/play-terms/">Google Play Terms of Service</a></li>
+<li><a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a></li>
+</ul>
+<h3>Refunds</h3>
+<p>Refunds are handled by Google Play; the developer does not handle your money. Once a refund completes, membership is removed the next time the app checks your purchase status.</p>
+<h2>5. Feedback</h2>
+<p>When you choose to use the feedback feature, the app opens your own email client with the subject line and basic device details (model, OS version, app version) pre-filled, so problems can be tracked down.</p>
+<p><strong>You decide what the message says, and nothing is sent until you send it.</strong> You are free to delete anything you would rather not provide. Messages received are used only to reply and to improve the app.</p>
+<h2>6. Permissions the app requests, and why</h2>
+<p>None of these are used to collect data. They are what it takes to <strong>wake you at the time you asked for</strong>:</p>
+<div class="table-wrap"><table><thead><tr>
+<th>Permission</th>
+<th>Why it is needed</th>
+</tr></thead><tbody>
+<tr><td>Exact alarms</td><td>So the alarm rings at the minute you set, instead of being delayed by tens of minutes</td></tr>
+<tr><td>Full-screen notifications</td><td>To show the ringing screen directly while the screen is locked</td></tr>
+<tr><td>Notifications</td><td>To show the ringing notification and membership expiry reminders</td></tr>
+<tr><td>Start at boot</td><td>To reschedule your alarms after a restart. Without it, the alarm on the night you restart will not ring</td></tr>
+<tr><td>Wake lock</td><td>To stop the system sleeping and cutting off the sound while the alarm rings</td></tr>
+<tr><td>Foreground service</td><td>To keep playing the sound while ringing, without being reclaimed by the system</td></tr>
+<tr><td>Vibrate</td><td>To vibrate while ringing (can be turned off per alarm)</td></tr>
+<tr><td>Ignore battery optimisation</td><td>To stop power-saving features from disabling alarms</td></tr>
+<tr><td>Network</td><td>The three connections described in section 2</td></tr>
+<tr><td>Read the audio file you choose</td><td>To read the file when you set a custom sound. The app only touches the <strong>one file you explicitly choose</strong>; it does not browse your music library</td></tr>
+<tr><td>Display over other apps</td><td>To show the ringing screen while you are using your phone. Without it, an alarm only appears as a notification that you must open to stop</td></tr>
+</tbody></table></div>
+<h3>About the copy of your custom sound</h3>
+<p>When you choose an audio file as your alarm sound, <strong>the app copies it into its own storage</strong> and plays that copy from then on.</p>
+<p>There are two reasons, both about the alarm actually being able to ring: after a restart, the original file cannot be read until you unlock the screen; and if you later delete or move that track, or it lives on a memory card you remove, the sound would stop working.</p>
+<p>That copy <strong>stays on your own phone</strong> and is never uploaded anywhere. When you change your alarm sound, copies no longer used by any alarm are deleted the next time you open the app; uninstalling removes them all.</p>
+<h2>7. What we do not do</h2>
+<p>Stated explicitly, to avoid any misunderstanding:</p>
+<ul>
+<li><strong>No account system</strong> — no registration or sign-in, not even for membership (see section 4: it uses a random identifier, not an account)</li>
+<li><strong>No analytics</strong> (no Google Analytics, no Firebase, nothing of that kind)</li>
+<li><strong>No crash reporting</strong></li>
+<li><strong>No location data</strong></li>
+<li><strong>No access to contacts, call logs, messages or photos</strong></li>
+<li><strong>Nothing is sold</strong> — the developer holds no data that could be sold</li>
+</ul>
+<h2>8. Children&#x27;s privacy</h2>
+<p>This app is not designed for children under 13 and does not knowingly collect personal data from children.</p>
+<h2>9. Data retention and deletion</h2>
+<ul>
+<li><strong>What you create</strong>: kept on your device until you delete the alarm, clear app data, or uninstall the app</li>
+<li><strong>Advertising data</strong>: retained and deleted by Google under its own policy; you can control it through the Android ad settings described above</li>
+<li><strong>Purchase records</strong>: retained by Google Play and RevenueCat under their respective policies. This record <strong>deliberately outlives the app on your device</strong> — that is exactly why your purchase can be restored when you reinstall or change phones</li>
+</ul>
+<p>The developer stores no data that could identify you.</p>
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes, the &quot;last updated&quot; date at the top will be updated. Significant changes will also be explained inside the app.</p>
+<h2>11. Contact</h2>
+<p>Contact address for this policy: <strong>botanodev@gmail.com</strong></p>
+<footer>「我的鬧鐘」（Botano）· botanodev@gmail.com</footer>
+</main>
+</body>
+</html>
