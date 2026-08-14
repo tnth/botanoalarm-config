@@ -1,12 +1,43 @@
 # botanoalarm-config
 
-**Botano / 我的鬧鐘** 這支 App 的遠端設定檔。這裡只有一個檔案要顧：
+**Botano / 我的鬧鐘** 這支 App 對外公開的東西都放這裡。兩個檔案：
 
-**[`holiday_config.json`](holiday_config.json)**
+| 檔案 | 是什麼 | 什麼時候要動它 |
+|---|---|---|
+| **[`holiday_config.json`](holiday_config.json)** | App 去哪裡抓台灣的放假資料 | 假日標記出問題時（見下） |
+| **[`privacy.html`](privacy.html)** | 隱私權政策的網頁版 | App 的資料行為改變時 |
+
+> ⚠️ **這個 repo 必須永遠公開、而且不能改名或刪除。**
+> `holiday_config.json` 的網址寫在 App 裡，`privacy.html` 的網址填在
+> Play Console。兩個都是外面指進來的，動了就是斷掉。
 
 ---
 
-## 這是什麼
+## privacy.html：改它之前先看這裡
+
+**這份是副本，正本在 App 的原始碼裡**（`doc/privacy_policy.md`）。
+
+原始碼那個 repo 是私有的，開不了 GitHub Pages，所以隱私權政策才需要在這裡放一份。
+
+**要改就兩邊一起改。** 只改一邊的話，商店上寫的與 App 裡（設定 →「關於」）顯示的會是兩套說法——那不只是不一致，在法律上是個問題，Play 審核也會抓。
+
+正本改完之後，用專案裡的轉檔腳本重新產生這一頁，**不要手改 HTML**（手改的話，下次跑腳本就會被蓋掉）。在 App 的專案目錄下執行：
+
+```
+python tool/privacy_to_html.py ../botanoalarm-config/privacy.html
+```
+
+最後那個路徑換成你這個 repo 的實際位置。
+
+已知還有一次改動是排定要做的：**內購上線後**，要回頭確認第四節寫的 RevenueCat 行為與實際串接一致。
+
+網址（填在 Play Console 的就是這個）：
+
+**<https://tnth.github.io/botanoalarm-config/privacy.html>**
+
+---
+
+## holiday_config.json：這是什麼
 
 App 需要知道台灣哪幾天放假（國定假日、補班日），才能讓「依行事曆」的鬧鐘在該休息的日子不要響。那份資料不是我們自己維護的，是去抓別人的公開資料。
 
@@ -16,7 +47,7 @@ App 需要知道台灣哪幾天放假（國定假日、補班日），才能讓�
 
 改一個檔案，所有使用者的手機在 30 天內自己接上新的來源。沒有這個機制的話，唯一的修法是發一版新 App、等 Google 審核、再等使用者更新——而不更新的人永遠修不好。
 
-> ⚠️ **這個 repo 必須保持公開。** App 是匿名去抓的，改成私有之後所有人都會抓不到（不會壞掉，但這個機制就等於不存在了）。
+（改成私有的話 App 會抓不到——不會壞掉，會退回內建那份，但這個機制就等於不存在了。）
 
 ---
 

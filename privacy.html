@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隱私權政策 — 我的鬧鐘</title>
+<style>
+  :root {
+    --bg: #f5f7f4;
+    --surface: #ffffff;
+    --text: #1c211b;
+    --muted: #5b6459;
+    --accent: #2f5e33;
+    --border: #dfe4dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121511;
+      --surface: #1a1e19;
+      --text: #e4e8e1;
+      --muted: #9aa396;
+      --accent: #9ccc9f;
+      --border: #2c322a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    line-height: 1.85;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.4;
+    margin: 0 0 .35rem;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 2.75rem 0 .6rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+  }
+  h3 { font-size: 1.02rem; margin: 1.75rem 0 .4rem; color: var(--muted); }
+  p, li { margin: .7rem 0; overflow-wrap: break-word; }
+  ul { padding-left: 1.3rem; }
+  a { color: var(--accent); }
+  strong { font-weight: 700; }
+  .meta { color: var(--muted); font-size: .9rem; line-height: 1.7; }
+  .meta p { margin: .1rem 0; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 22rem; }
+  th, td {
+    border: 1px solid var(--border);
+    padding: .55rem .7rem;
+    text-align: left;
+    vertical-align: top;
+    font-size: .95rem;
+  }
+  th { background: var(--surface); font-weight: 700; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>「我的鬧鐘」隱私權政策</h1>
+<div class="meta"><p>最後更新：2026 年 8 月 14 日</p><p>生效日期：【上架日】</p></div>
+<p>感謝你使用「我的鬧鐘」。這份文件說明這個 App 會接觸到哪些資料、為什麼需要它們，以及哪些資料我們<strong>根本看不到</strong>。</p>
+<h2>一句話總結</h2>
+<p><strong>你在這個 App 裡建立的所有資料——鬧鐘、班表、備註——都只存在你自己的手機上，不會上傳到任何伺服器，開發者看不到。</strong></p>
+<p>會接觸到你裝置資訊的只有兩個外部服務：Google 的廣告服務（第三節），以及你購買會員時的付款處理（第四節）。兩者都拿不到你的鬧鐘或班表。</p>
+<h2>1. 你建立的資料</h2>
+<p>包括：</p>
+<ul>
+<li>鬧鐘設定（時間、重複規則、鈴聲、震動）</li>
+<li>行事曆上的上班／休假／班別標記</li>
+<li>你自己寫的備註文字</li>
+<li>App 的偏好設定</li>
+</ul>
+<p><strong>這些資料完全存放在你的裝置本機。</strong> 不需要註冊、不需要登入，也沒有雲端同步，開發者沒有任何管道讀取它們。</p>
+<p>（購買會員的人，<strong>只有「有沒有買」這件事</strong>會存在外部服務上，好讓你換手機時能還原。那裡沒有你的鬧鐘、班表或備註——詳見第四節。）</p>
+<p><strong>移除 App 就等於刪除全部。</strong> 我們沒有備份，也沒有辦法幫你救回來——這是不上傳的代價，也是不上傳的好處。</p>
+<h3>關於備份檔</h3>
+<p>App 提供匯出／匯入功能。匯出的檔案內容就是上面那些資料，<strong>由你決定存到哪裡或分享給誰</strong>：</p>
+<ul>
+<li>存到本機，那個檔案就在你自己的儲存空間裡</li>
+<li>透過分享功能傳出去（例如雲端硬碟、通訊軟體），那份資料就進入該服務的管轄範圍，適用的是<strong>該服務</strong>的隱私權政策</li>
+</ul>
+<p>無論哪一種，開發者都不經手，也拿不到那個檔案。</p>
+<h2>2. 網路連線</h2>
+<p>這個 App 只在兩種情況下連網：</p>
+<p><strong>（a）下載政府行事曆設定檔</strong></p>
+<p>用來判斷國定假日與補班日。這是一個公開的靜態檔案，<strong>下載時不會送出任何關於你的資訊</strong>——不會送出你的鬧鐘、標記、裝置識別碼或位置。這個功能可以在設定裡關閉；關閉後改用 App 內建的清單，鬧鐘功能不受影響。</p>
+<p><strong>（b）載入廣告</strong></p>
+<p>見下一節。</p>
+<h2>3. 第三方服務：Google AdMob（廣告）</h2>
+<p>未購買會員的使用者會看到廣告，廣告由 <strong>Google AdMob</strong> 提供。</p>
+<p>為了投放廣告，Google 會取用你裝置上的資訊，可能包括：</p>
+<ul>
+<li>廣告識別碼（Advertising ID）</li>
+<li>裝置與 App 的基本資訊（機型、作業系統版本、語言、大致所在地區）</li>
+<li>廣告的曝光與點擊紀錄</li>
+</ul>
+<p><strong>這些資料由 Google 收集與使用，不會傳給開發者。</strong> 開發者看到的只有彙總後的收益統計，無法對應到任何個別使用者。</p>
+<p>Google 如何使用這些資料，請見：</p>
+<ul>
+<li><a href="https://policies.google.com/privacy">Google 隱私權政策</a></li>
+<li><a href="https://policies.google.com/technologies/partner-sites">Google 如何在合作夥伴的網站或應用程式中使用資訊</a></li>
+</ul>
+<p><strong>你可以限制廣告追蹤</strong>：Android 的「設定 → Google → 廣告」提供刪除廣告識別碼與關閉廣告個人化的選項。關閉後你仍會看到廣告，只是相關性較低。</p>
+<p><strong>購買會員可以完全移除廣告</strong>，廣告 SDK 也就不再載入。</p>
+<h2>4. 購買會員時的付款資料</h2>
+<p>購買會員時，付款完全在 <strong>Google Play</strong> 的畫面上完成。</p>
+<p><strong>你不會在這個 App 裡輸入信用卡號，開發者也永遠看不到你的卡號、帳單地址或任何付款細節。</strong> 那些資料由 Google 處理，適用 Google 的隱私權政策。</p>
+<h3>RevenueCat</h3>
+<p>為了記住「你買過了」，App 使用 <strong>RevenueCat</strong> 這個服務來驗證與保存購買狀態。它會取得：</p>
+<ul>
+<li><strong>一組 App 自動產生的隨機識別碼</strong>，用來代表「這台裝置的使用者」。這組碼與你的姓名、電子郵件、Google 帳號都沒有關聯</li>
+<li><strong>購買紀錄</strong>：買了哪個項目、什麼時候買的、目前是否有效、是否退款</li>
+<li>裝置與平台的基本資訊（作業系統、App 版本、國家／地區）</li>
+</ul>
+<p><strong>它拿不到你的鬧鐘、班表、備註，也拿不到你的付款方式。</strong></p>
+<p>之所以需要這個服務，是為了讓購買在你<strong>換手機或重裝 App 之後還能還原</strong>——如果只記在手機上，那份紀錄會跟著 App 一起被刪掉。</p>
+<p>相關政策：</p>
+<ul>
+<li><a href="https://play.google.com/intl/zh-TW/about/play-terms/">Google Play 服務條款</a></li>
+<li><a href="https://www.revenuecat.com/privacy/">RevenueCat 隱私權政策</a></li>
+</ul>
+<h3>退款</h3>
+<p>退款由 Google Play 處理，開發者不經手你的款項。退款完成後，會員資格會在 App 下次確認購買狀態時自動解除。</p>
+<h2>5. 意見反饋</h2>
+<p>你主動使用「意見反饋」功能時，App 會開啟你自己的電子郵件程式，並預先填入主旨與裝置基本資訊（機型、系統版本、App 版本），方便排查問題。</p>
+<p><strong>信件內容完全由你決定，你按下寄出才會送出。</strong> 你可以自行刪掉任何不想提供的內容。收到的信件僅用於回覆與改善 App。</p>
+<h2>6. App 要求的權限，以及為什麼</h2>
+<p>這些權限<strong>都不是用來收集資料的</strong>，而是「在你指定的時間確實把你叫醒」所必需：</p>
+<div class="table-wrap"><table><thead><tr>
+<th>權限</th>
+<th>為什麼需要</th>
+</tr></thead><tbody>
+<tr><td>精確鬧鐘</td><td>讓鬧鐘在你設定的那一分鐘準時響，而不是被系統延後幾十分鐘</td></tr>
+<tr><td>全螢幕通知</td><td>螢幕鎖定時直接跳出響鈴畫面</td></tr>
+<tr><td>通知</td><td>顯示響鈴中的通知、以及會員到期提醒</td></tr>
+<tr><td>開機時啟動</td><td>手機重開機後把鬧鐘重新排回去。少了它，重開機當晚的鬧鐘就不會響</td></tr>
+<tr><td>喚醒鎖定</td><td>響鈴期間避免系統休眠而中斷聲音</td></tr>
+<tr><td>前景服務</td><td>響鈴時持續播放聲音，不被系統回收</td></tr>
+<tr><td>震動</td><td>響鈴時震動（可個別關閉）</td></tr>
+<tr><td>忽略電池最佳化</td><td>避免省電機制讓鬧鐘失效</td></tr>
+<tr><td>網路</td><td>前述的假日設定檔與廣告</td></tr>
+<tr><td>讀取你選的音檔</td><td>你選自訂鈴聲時讀取那個檔案。App 只會碰你<strong>明確選擇</strong>的那一個檔案，不會瀏覽你的音樂庫</td></tr>
+<tr><td>顯示在其他應用程式上層</td><td>鬧鐘響的時候直接跳出響鈴畫面。少了它，你正在用手機時鬧鐘只會出現一則通知，要自己點開才停得掉</td></tr>
+</tbody></table></div>
+<h3>關於自訂鈴聲的副本</h3>
+<p>你選定一首音檔作為鈴聲時，<strong>App 會把它複製一份到自己的儲存空間</strong>，之後播放的是那份副本。</p>
+<p>這麼做有兩個原因，都與「鬧鐘要響得出來」直接相關：手機重新開機後、你還沒解鎖螢幕之前，系統讀不到原本的檔案；以及你之後若把那首歌刪掉、移走，或它存在被拔掉的記憶卡上，鈴聲就會失效。</p>
+<p>那份副本<strong>只存在你自己的手機裡</strong>，不會上傳到任何地方。你把鈴聲換掉之後，不再被任何鬧鐘使用的副本會在下次開啟 App 時自動刪除；移除 App 則會一併清除。</p>
+<h2>7. 我們不做的事</h2>
+<p>為了避免任何誤解，明確列出：</p>
+<ul>
+<li><strong>沒有帳號系統</strong>，不需要註冊或登入（購買會員也不用——見第四節，那裡用的是一組隨機識別碼，不是帳號）</li>
+<li><strong>沒有分析工具</strong>（不使用 Google Analytics、Firebase 或任何同類服務）</li>
+<li><strong>沒有當機回報工具</strong></li>
+<li><strong>不收集位置資訊</strong></li>
+<li><strong>不讀取通訊錄、通話紀錄、簡訊、相簿</strong></li>
+<li><strong>不販售任何資料</strong>——開發者手上根本沒有可販售的資料</li>
+</ul>
+<h2>8. 兒童隱私</h2>
+<p>這個 App 不針對 13 歲以下兒童設計，也不會刻意收集兒童的個人資料。</p>
+<h2>9. 資料的保存與刪除</h2>
+<ul>
+<li><strong>你建立的資料</strong>：保存在你的裝置上，直到你刪除鬧鐘、清除 App 資料，或移除 App</li>
+<li><strong>廣告相關資料</strong>：由 Google 依其政策保存與刪除，你可透過上述的 Android 廣告設定進行控制</li>
+<li><strong>購買紀錄</strong>：由 Google Play 與 RevenueCat 依其各自的政策保存。這筆紀錄<strong>刻意在移除 App 之後仍然存在</strong>——那正是你重裝或換手機時還能還原購買的原因。要求刪除請來信，見最後一節</li>
+</ul>
+<h2>10. 政策變更</h2>
+<p>本政策若有修改，會更新頁面上方的「最後更新」日期。涉及重大變更時，會在 App 內另行說明。</p>
+<h2>11. 聯絡方式</h2>
+<p>對本政策或資料處理方式有任何疑問，請來信：</p>
+<p><strong>botanodev@gmail.com</strong></p>
+<footer>「我的鬧鐘」（Botano）· botanodev@gmail.com</footer>
+</main>
+</body>
+</html>
